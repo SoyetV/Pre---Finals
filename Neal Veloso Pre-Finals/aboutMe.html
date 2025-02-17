@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(images/wallpaper.jpg); /* Updated background */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            color: #333;
+        }
+
+        .sidebar {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 8px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-weight: 700;
+            font-size: 48px;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 3px solid #FFFFFF;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            text-align: left;
+        }
+
+        .portfolio-table h2 {
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-table p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .portfolio-table ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .portfolio-table li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .portfolio-table li b {
+            color: #007BFF;
+        }
+
+        .footer {
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home.png" alt="Home icon" width="50">
+                <br>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Skills.html">
+                <img src="images/skill.png" alt="Skills icon" width="50">
+                <br>
+                <span>Skills</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Projects.html">
+                <img src="images/project.png" alt="Projects icon" width="50">
+                <br>
+                <span>Projects</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile.png" alt="Profile icon" width="50">
+                <br>
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <br>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">ABOUT ME</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+        
+            <table class="portfolio-table">
+                <tr>
+                    <td>
+                        <h2>Welcome to <span class="highlight">SOYET</span>!</h2>
+                        <p>Hello! I'm <span class="highlight">Neal Pizon Veloso</span>, born on July 3, 2006, and I’m 18 years old. A proud native of <span class="highlight">Caridad Norte, Matalom Leyte</span>, now residing in <span class="highlight">Cabancalan, Mandaue City</span>.</p>
+                        <p>I have a deep passion for learning, which drives me to explore fields ranging from technology and programming to design and creative expression. My diverse background helps me tackle challenges with a unique perspective, always striving to improve and grow.</p>
+                        <p>When I’m not working or studying, I enjoy quality time with loved ones. Staying active is also important to me, which is why I regularly hit the gym to focus on both my physical and mental health.</p>
+                        <p>Whether it's through <span class="highlight">coding</span>, <span class="highlight">designing websites</span>, or achieving personal goals, I’m committed to becoming the best version of myself.</p>
+                    </td>
+                </tr>
+            </table>
+            <footer class="footer">
+                &copy; 2024 Soyet. All Rights Reserved.
+            </footer>
+        </div>
+    </body>
+    </html>

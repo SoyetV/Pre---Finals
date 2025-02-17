@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(images/wallpaper.jpg); /* Updated background */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            color: #333;
+        }
+
+        .sidebar {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 8px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-weight: 700;
+            font-size: 48px;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 3px solid #FFFFFF;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            text-align: left;
+        }
+
+        .portfolio-table h2 {
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-table p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .portfolio-table ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .portfolio-table li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .portfolio-table li b {
+            color: #007BFF;
+        }
+
+        .footer {
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .scroll-box {
+            width: 90%;
+            max-height: 500px;
+            overflow-y: auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .scroll-box h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home.png" alt="Home icon" width="50">
+                <br>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Skills.html">
+                <img src="images/skill.png" alt="Skills icon" width="50">
+                <br>
+                <span>Skills</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Projects.html">
+                <img src="images/project.png" alt="Projects icon" width="50">
+                <br>
+                <span>Projects</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile.png" alt="Profile icon" width="50">
+                <br>
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <br>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">SKILLS</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+        
+        <div class="scroll-box">
+            <h3>Skills Breakdown:</h3>
+            <p>With my code, Im showcasing several key skills, particularly in web development. Here’s a breakdown:</p>
+            <ul>
+                <li><b>1. HTML (Hypertext Markup Language):</b> Im structuring a webpage using HTML tags.
+                    <ul>
+                        <li>Basic page structure (&lt;html&gt;, &lt;head&gt;, &lt;body&gt;, etc.)</li>
+                        <li>Navigation (&lt;a&gt;, &lt;img&gt;)</li>
+                        <li>Content organization (&lt;table&gt;, &lt;ul&gt;, &lt;li&gt;)</li>
+                        <li>Text styling and headings (&lt;h2&gt;, &lt;p&gt;, etc.)</li>
+                    </ul>
+                </li>
+                <li><b>2. CSS (Cascading Style Sheets):</b> Im styling the page with CSS to make it visually appealing.
+                    <ul>
+                        <li>Custom styles for the body, sidebar, content, and table.</li>
+                        <li>Flexbox layout for responsive design and centering (display: flex, justify-content: center, etc.).</li>
+                        <li>Hover effects on sidebar items (transform: scale(1.1)).</li>
+                        <li>Custom font and text styling using Google Fonts.</li>
+                        <li>Box shadows, background images, and transitions to enhance the design.</li>
+                    </ul>
+                </li>
+                <li><b>3. Responsive Design:</b> The use of flexbox and percentage-based widths hints at responsiveness, which ensures the layout adapts well to various screen sizes.</li>
+                <li><b>4. UI/UX Design:</b> The design shows an understanding of user experience (UX) principles, such as:
+                    <ul>
+                        <li>A clear, easy-to-navigate sidebar.</li>
+                        <li>A welcoming introduction with a profile image and a clear "Home" message.</li>
+                        <li>An organized and well-presented portfolio-style table.</li>
+                        <li>Attention to aesthetics (background image, button hover effects, etc.).</li>
+                    </ul>
+                </li>
+                <li><b>5. Basic Image Management:</b> Im are incorporating images for various elements (e.g., sidebar icons, profile picture) and adjusting their sizes (width="50" for icons, width="80" height="80" for the profile image).</li>
+                <li><b>6. Web Accessibility:</b> Although not fully addressed here, using alternative text for images (alt="Home icon") is a basic accessibility practice for users who rely on screen readers.</li>
+                <li><b>7. Content Strategy:</b> Your table content serves as an informational guide, helping visitors understand the structure of your website and navigate easily through it.</li>
+            </ul>
+        </div>
+
+        <footer class="footer">
+            &copy; 2024 Soyet. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

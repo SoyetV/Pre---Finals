@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(images/wallpaper.jpg); /* Updated background */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            color: #333;
+        }
+
+        .sidebar {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 8px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-weight: 700;
+            font-size: 48px;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 3px solid #FFFFFF;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            text-align: left;
+        }
+
+        .portfolio-table h2 {
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-table p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .portfolio-table ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .portfolio-table li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .portfolio-table li b {
+            color: #007BFF;
+        }
+
+        .footer {
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .scroll-box {
+            width: 90%;
+            max-height: 500px;
+            overflow-y: auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .scroll-box h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home.png" alt="Home icon" width="50">
+                <br>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Skills.html">
+                <img src="images/skill.png" alt="Skills icon" width="50">
+                <br>
+                <span>Skills</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Projects.html">
+                <img src="images/project.png" alt="Projects icon" width="50">
+                <br>
+                <span>Projects</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile.png" alt="Profile icon" width="50">
+                <br>
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <br>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">PROJECTS</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+        
+        <div class="scroll-box">
+            <h3>Project 1: Personal Portfolio Website</h3>
+            <p><b>Description:</b> This is my personal portfolio website, created to highlight my web development skills and showcase my previous projects. I designed it to have a clean, modern look with simple, intuitive navigation. Built using HTML, CSS, and JavaScript, the site is fully responsive, so it adapts seamlessly to both desktop and mobile screens.</p>
+        
+            <p>It includes an "About Me" section where I talk a little about my background, a "Projects" section where visitors can view clickable thumbnails of my work, and a contact form for potential clients or employers to reach out to me. For an enhanced user experience, I incorporated smooth scrolling and a sticky navigation bar.</p>
+        
+            <h4>Key Features:</h4>
+            <ul>
+                <li><b>Responsive Layout:</b> The site adjusts perfectly for both desktop and mobile views.</li>
+                <li><b>Project Gallery:</b> Displays my web development projects with brief descriptions and direct links to the live sites.</li>
+                <li><b>Interactive Contact Form:</b> Ensures users submit accurate information through JavaScript validation.</li>
+                <li><b>Skills Section:</b> Highlights the technical tools and languages I use, including HTML, CSS, JavaScript, React, and more.</li>
+                <li><b>SEO Optimization:</b> The HTML structure is designed to improve visibility on search engines.</li>
+                <h3>Project 1: Personal Portfolio Website</h3>
+                <p><b>Description:</b> This is my personal portfolio website, created to highlight my web development skills and showcase my previous projects. I designed it to have a clean, modern look with simple, intuitive navigation. Built using HTML, CSS, and JavaScript, the site is fully responsive, so it adapts seamlessly to both desktop and mobile screens.</p>
+            
+                <p>It includes an "About Me" section where I talk a little about my background, a "Projects" section where visitors can view clickable thumbnails of my work, and a contact form for potential clients or employers to reach out to me. For an enhanced user experience, I incorporated smooth scrolling and a sticky navigation bar.</p>
+            
+                <h4>Key Features:</h4>
+                <ul>
+                    <li><b>Responsive Layout:</b> The site adjusts perfectly for both desktop and mobile views.</li>
+                    <li><b>Project Gallery:</b> Displays my web development projects with brief descriptions and direct links to the live sites.</li>
+                    <li><b>Interactive Contact Form:</b> Ensures users submit accurate information through JavaScript validation.</li>
+                    <li><b>Skills Section:</b> Highlights the technical tools and languages I use, including HTML, CSS, JavaScript, React, and more.</li>
+                    <li><b>SEO Optimization:</b> The HTML structure is designed to improve visibility on search engines.</li>
+                </ul>
+
+                <h3>Project 2: Simple Jump Game</h3>
+                <p><b>Description:</b> A classic arcade-style game where the player controls a character that needs to jump over obstacles. The goal is to avoid colliding with oncoming barriers by pressing a key to make the character jump. The game is built with HTML for structure, CSS for styling, and JavaScript to control the game mechanics, such as jumping, obstacle movement, and collision detection.</p>
+            
+                <h4>Key Features:</h4>
+                <ul>
+                    <li><b>Character Movement:</b> The player can control a character (e.g., a simple square or circle) that moves horizontally across the screen.</li>
+                    <li><b>Jump Mechanic:</b> The player presses a key (like the "Spacebar") to make the character jump over incoming obstacles.</li>
+                    <li><b>Obstacles:</b> Randomly generated obstacles (such as blocks or bars) appear from the right side of the screen and move toward the character. The player must jump over them to avoid collision.</li>
+                    <li><b>Scoring System:</b> The score increases based on how long the player survives. Each time the character successfully jumps over an obstacle, the score increases by 1 point.</li>
+                    <li><b>Collision Detection:</b> If the character collides with an obstacle, the game ends, and the player’s final score is displayed.</li>
+                    <li><b>Responsive Design:</b> The game’s layout adapts to different screen sizes for mobile or desktop play.</li>
+                    <li><b>Game Over Screen:</b> When the player loses, a simple "Game Over" message is displayed, along with their score and an option to restart the game.</li>
+                </ul>
+            
+                <p>This simple jump game project is great for practicing basic JavaScript, especially working with events (like keypresses), animations (for the jumping effect), and collision detection. It’s a fun and interactive way to learn game development basics!</p>
+            </div>
+
+        <footer class="footer">
+            &copy; 2024 Soyet. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
